@@ -1,6 +1,6 @@
 # Java Thinking
 
-- [Unit Test/Logging/Performance](unittest-logging-performance)
-  - [Unit Test](unittest-logging-performance/unittest.md)
-  - [Logging](unittest-logging-performance/logging.md)
-  - [Performance](unittest-logging-performance/performance.md)
+- [Unit Test/Logging/Performance](unittest-logging-performance.md)
+  - [Unit Test](unittest-logging-performance.md#Unit-Test)
+  - [Logging](unittest-logging-performanc.md#Logging)
+  - [Performance](unittest-logging-performance.md#Performance)
