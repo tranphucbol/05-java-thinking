@@ -136,7 +136,7 @@ Chúng có thể tạo một Executor bằng cách sử dụng một trong các 
 - **newCachedThreadPool()**: trong ThreadPool sẽ có nhiều Thread và các nhiệm vụ sẽ được xử lý một cách song song. Các Thread cũ sau khi xử lý xong sẽ được sử dụng lại cho nhiệm vụ mới. Mặc định nếu một Thread không được sử dụng trong vòng 60 giây thì Thread đó sẽ bị tắt.
 - **newFixedThreadPool(int n)**: trong ThreadPool sẽ được cố định các Thread. Nếu một nhiệm vụ mới được đưa vào mà các Thread đều đang “bận rộn” thì nhiệm vụ đó sẽ được gửi vào Blocking Queue và sau đó nếu có một Thread đã thực thi xong nhiệm vụ của nó thì nhiệm vụ đang ở trong Queue đó sẽ được push ra khỏi Queue và được Thread đó xử lý tiếp.
 - **newScheduledThreadPool(int corePoolSize):** tương tự như **newCachedThreadPool()**nhưng sẽ có thời gian delay giữa các Thread.
-- **newSingleThreadScheduledExecutor():** tương tự như newSingleThreadExecutor() nhưng sẽ có khoảng thời gian delay giữa các Thread.
+- **newSingleThreadScheduledExecutor():** tương tự như **newSingleThreadExecutor()** nhưng sẽ có khoảng thời gian delay giữa các Thread.
 
 ## Reference
 
