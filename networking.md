@@ -161,6 +161,52 @@ Những phương thức hay hoạt động này thường được gọi là **C
 
 [Nguyên tắc thiết kế cho RESTful API](https://medium.com/eway/nguy%C3%AAn-t%E1%BA%AFc-thi%E1%BA%BFt-k%E1%BA%BF-rest-api-23add16968d7)
 
+## Benchmark
+
+**Benchmark** là đánh giá, cũng tương tự gần như review (đánh giá), nhưng nó không phải là đánh giá toàn bộ mà là chỉ đánh giá một phần của thiết bị phần cứng hoặc phần mềm cần đánh giá, một phần của review. Bản thân review có thể có hoặc không có phần benchmark.
+
+Chúng ta có thể có 2 dạng **Benchmark** theo tiêu chí mà người dùng muốn sử dụng để đo tốc độ.
+
+- Tiêu chí về phần cứng ta có đo điểm Benchmark của CPU, GPU, RAM, HDD.
+- Tiêu chí về phần mềm ta có đo điểm Benchmark về game, về thiết kế, về công nghệ, vv..
+
+### JMeter
+
+**JMeter** là công cụ mã nguồn mở rất phổ biến trong việc kiểm thử khả năng chịu tải cho website. Apache Jmeter là một ứng dụng của Java được thiết kế đặc biệt cho khả năng đo hiệu suất.
+
+#### Ưu điểm của JMeter
+
+- Có khả năng kiểm thử với một loạt các công nghệ như Java Objects, Web HTTP/HTTPS, SOAP và Rest Services, FTP, Database với JDBC.
+- Một IDE (Integrated Development Environment) tốt để bạn có thể sử dụng để ghi lại, xây dựng và gỡ lỗi các bài kiểm tra hiệu năng của bạn.
+- Từ phiên bản JMeter 3.1 thì Groovy là ngôn ngữ lập trình mặc định.
+- Một trong những công cụ kiểm tra hiệu suất phổ biến nhất.
+- Nguồn mở, miễn phí
+- Giao diện đơn giản, trực quan dễ sử dụng
+- JMeter lưu các kịch bản kiểm thử của nó dưới dạng các file XML, do đó ta có thể tự tạo các kịch bản kiểm thử của mình bằng một trình soạn thảo bất kỳ và load nó lên
+- Đa luồng, giúp xử lý tạo nhiều request cùng một khoảng thời gian, xử lý các dữ liệu thu được một cách hiệu quả
+
+#### Nhược điểm JMeter
+
+- Gặp khó khăn khi mở rộng quy mô xử lý những bài test phân phối lớn. Đặc biệt nếu bạn thiết lập một cụm máy thì bạn phải cấu hình để chúng có thể trao đổi với nhau.
+- Gặp một loạt các vấn đề dàn xếp khi thực hiện các bài kiểm tra lớn.
+
+### Locust
+
+Đây là công cụ kiểm tra tải đơn giản, dễ sử dụng và dễ phân phối và tất nhiên nó được sử dụng để kiểm thử tải trang web rồi. Locust cũng có thể giúp bạn tìm ra bao nhiêu người dùng truy cập đồng thời trên web mà hệ thống có thể xử lý được. Bạn cũng có thể xác định hành vi mà bạn muốn cho từng trường hợp kiểm thử. Ngoài ra Locust còn cung cấp giao diện web để bạn theo dõi quá trình benchmark theo thời gian thực.
+
+#### Ưu điểm của Locust
+
+- Khả năng tạo kịch bản cho bài test bằng python.
+- Dễ dàng quy mô số người truy cập mà bạn cần.
+- Giao diện trên nền web rất chất, đẹp.
+- Có khả năng mở rộng.
+- Hiệu quả trong việc test các API.
+
+#### Nhược điểm của Locust
+
+- Hiện tại chưa thấy nhiều báo cáo về nhược điểm của Locust cả, tuy nhiên bản thân mình thấy thì Locust chỉ sử dụng được khi OS cài python 2.7, 3.3, 3.4, 3.5, và 3.6.
+- Mình lab thử trên CentOS 6 thì phải cài thêm python 2.7 vì trên CentOS 6 chỉ mặc định cài python 2.6 mà thôi, hơi bất tiện xíu nhưng không sao.
+
 ## Reference
 
 - [Connection pool](https://stackjava.com/faq/connection-pool-la-gi-khai-niem-connection-pool-trong-database.html)
