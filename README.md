@@ -1,7 +1,7 @@
 # Java Thinking
 
 <div align="center">
-    <img src="/media/Java.jpg" alt="java-thinking">
+    <img src="/media/Java.png" alt="java-thinking">
 </div>
 
 ## Nội dung
